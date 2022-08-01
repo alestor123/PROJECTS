@@ -1,0 +1,26 @@
+{
+    "web-env-manage":{
+    "name":"WEB-ENV-MANAGE",
+    "version": "1.0.0",
+    "icon":"https://github.com/alestor123/WEB-ENV-MANAGE/raw/master/assets/icons/icon.svg",
+    "description":"This is a simple code for desktop version for WEB-ENV-MANAGE",
+    "url":"https://github.com/alestor123/WEB-ENV-MANAGE",
+    "homepage": "https://github.com/alestor123/PROJECTS#readme",
+    "bugsUrl":"https://github.com/alestor123/PROJECTS/issues",
+    "license": "MIT",
+    "using":["electron","vanilla js"],
+    "tags":["desktop"]
+},
+"manga-cli":{
+    "name":"MANGA-CLI",
+    "version": "1.0.5",
+    "description": "This is a simple code for fetching manga in the comfort of cli",
+    "funding": "https://alestor123.is-a.dev/donate",
+    "url":"https://github.com/alestor123/MANGA-CLI",
+    "homepage": "https://github.com/alestor123/MANGA-CLI#readme",
+    "bugsUrl":"https://github.com/alestor123/MANGA-CLI/issues",
+    "license": "MIT",
+    "using":["cli","chalk.js","axios","x-ray"],
+    "tags":["cli","utilities"]
+}
+}

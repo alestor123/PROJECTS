@@ -1,0 +1,34 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "This is a simple code api for fetching projects",
+  "main": "App.js",
+  "funding": "https://alestor123.is-a.dev/donate",
+
+  "scripts": {
+    "test": "standard && node test.js | tap-spec",
+    "example": "vercel dev",
+    "lint": "standard . --fix"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alestor123/PROJECTS.git"
+  },
+  "keywords": [
+    "pi"
+  ],
+  "author": "Alestor Aldous",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alestor123/PROJECTS/issues"
+  },
+  "homepage": "https://github.com/alestor123/PROJECTS#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "control-access": "^0.1.1"
+  }
+}
