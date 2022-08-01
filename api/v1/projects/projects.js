@@ -1,12 +1,10 @@
 'use strict'
 
-const events = require('../../data/json/projects.json')
 const axios = require('axios')
 const controlAccess = require('control-access')
 const token = process.env.GHTOKEN
 const username = process.env.GHUSERNAME
-const number = process.env.MAXNUMBER || 50
-const { readFileSync, read } = require('fs')
+const { readFileSync } = require('fs')
 const { resolve } = require('path')
 
 const api = 'https://api.github.com/graphql'
@@ -26,7 +24,7 @@ module.exports = async (req, res) => {
         query ($cursor: String) {
             user(login: "${req.query.username || username}") {
                 repositories(
-                    last: ${req.query.maxnumber || number},
+                    last: ${req.query.maxnumber || (process.env.MAXNUMBER || 50)},
                     isLocked: false,
                     ownerAffiliations: OWNER,
                     privacy: PUBLIC,

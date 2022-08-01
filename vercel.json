@@ -1,8 +1,21 @@
 {
-    "routes":[{
+    "routes":[
+
+        {
       "src":"/api/v1/projects",
-      "dest":"api/v1/projects.js",
+      "dest":"api/v1/projects/projects.js",
       "methods":["GET"]
-  }
+  },
+  {
+    "src":"/api/v1/allrepos",
+    "dest":"api/v1/allrepos/allrepos.js",
+    "methods":["GET"]
+},
+{
+    "src":"/api/v1/allprojects",
+    "dest":"api/v1/allprojects/allprojects.js",
+    "methods":["GET"]
+}
+
 ]
 }
